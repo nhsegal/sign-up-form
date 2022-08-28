@@ -1,0 +1,38 @@
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #222222;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.left-side {
+    background-image: url(rockyshore.jpg);
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: cover;
+    background-position: left top;
+    width: 40%; 
+    height: 100vh;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-side a, .left-side a:visited {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.right-side {
+    background-color: rgb(245,245,240);
+    width: 60%;
+    padding: 4rem 1rem;
+}
+
+ul {
+    list-style: none;
+    text-align: right;
+    margin-right: 4rem;
+}
