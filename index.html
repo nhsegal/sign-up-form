@@ -11,7 +11,10 @@
 <body>
     <div class="left-side">
         <div class="logo">
-            Monkey
+            <img src="odin-lined.png" alt="logo" >
+             <div class="company-name">Simian Mind Nuggets</div>   
+          
+            
         </div>
         <div class="photo-credit">Photo by <a href="https://unsplash.com/photos/1mD403Eby6E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink/">Rod Long</a> 
             on <a href="https://unsplash.com/photos/1mD403Eby6E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink/">Unsplash</a></div>
@@ -19,39 +22,47 @@
     </div>
     <div class="right-side">
         <div class="top">
-           Sign up for our newsletter! Exclusive access to the output of over one <em>million</em> rhesus 
-           monkeys banging on typewriters <em>each</em> week! It's only a matter of time before they provide 
+           <h1>
+            Sign up for our newsletter!
+           </h1> Each week, exclusive access to the output of over <em>one million</em> Rhesus 
+           monkeys that have been banging on typewriters nonstop! It's only a matter of time before they provide 
            <em>you</em> with a script that rivals Shakespeare's finest masterpiece. <strong>Don't miss out!</strong>
         </div>
         <div class="middle">
             Sign up today!
-            <form>
-                <ul>
-                    <li>
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name">
-                    </li>
-                    <li>
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name">
-                    </li>
-                    <li>
-                        <label for="email">Email</label>
-                        <input type="email" id="email">
-                    </li>
-                    <li>
-                        <label for="password">Password</label>
-                        <input type="password" id="password">
-                    </li>
-                    <li><label for="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password">
-                        
-                    </li>
-                    <li>
-                        <button type="submit">Create Account</button>
-                    </li>
-                </ul>
+            <form action="#" method="post">
+                
+                <fieldset> 
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" minlength="2" maxlength="20" pattern="^[a-zA-Z]*$" 
+                    title="Please use only letters A thru Z. Must be between 2 and 20 characters." required>
+                      
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" minlength="2" maxlength="20" pattern="^[a-zA-Z]*$" 
+                    title="Please use only letters A thru Z. Must be between 2 and 20 characters."required>
+                </fieldset>
+                   
+                <fieldset>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" required>
+                </fieldset>
+              
+                <fieldset>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" minlength="7" maxlength="20"
+                        title="Password length must be between 7 and 20 characters." required>
 
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" minlength="7" maxlength="20"
+                        title="Password length must be between 7 and 20 characters." required>
+                </fieldset>
+                    
+                <div class="button">
+                    <button type="submit">Create Account</button>
+                </div>
             </form>
 
         </div>
@@ -59,6 +70,24 @@
 
         </div>
     </div>
-    
+    <script>
+        const btn = document.querySelector(button);
+        const pwd = document.querySelector#password.value;
+        const pwdconf = document.querySelector[#confirm-password].value;
+        const result = document.querySelector(.botton);
+        btn.addEventListener('click', checkPassword);
+
+        function checkPassword() {
+           
+            if (pwd == pwdconf) {
+                result.textContent = "Success!"
+                return true;
+            }
+            else {
+                result.textContent = "Password and confirmation mismatch. Please try again."
+            }
+
+        }
+    </script>
 </body>
 </html>
